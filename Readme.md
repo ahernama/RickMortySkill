@@ -1,4 +1,4 @@
-#  Skill de Rick & Morty para Alexa en Español
+#  Skill de Rick y Morty para Alexa en Español
 
 <img src="https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Pocket_mortys_banner.jpg" />
 
@@ -19,11 +19,12 @@ Alexa, dime como se llama el tercer episodio de la segunda temporada
 	>> El título del episodio 3 de la temporada 2 es Auto Erotic Assimilation.
 ```
 ```text
-Alexa, dime todos los que estén vivos en el episodio 4 de la temporada 2
+Alexa, dime todos los personajes que estén vivos en el episodio 4 de la temporada 2
 	>> Estos son los personajes que he encontrado Rick Sanchez, Morty Smith, Summer Smith, Beth Smith, Jerry Smith, Jacob, Mr. Poopybutthole, Snuffles (Snowball).
 ```
 
-### Repository Contents	 
+### Repository Contents	
+
 * `/lambda/custom` - Lógica de Back-end para la Skill de Alexa, desplegada en [AWS Lambda](https://aws.amazon.com/lambda/)
 * `/models/es-ES.json` - JSON de modelo de interacción para Español (para ser incluído en la consola de desarrollo de la Skill)
 
