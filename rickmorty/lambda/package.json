@@ -1,0 +1,13 @@
+{
+  "name": "rickmorty",
+  "version": "1.0.0",
+  "description": "Rick and Morty Alexa Skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ask-sdk": "^2.1.0",
+    "request": "^2.88.0"
+  }
+}

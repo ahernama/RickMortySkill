@@ -1,0 +1,171 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "rick y morty",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "GetNumEpisodesSeasonIntent",
+                  "slots": [
+                      {
+                          "name": "numSeason",
+                          "type": "AMAZON.NUMBER"
+                      },
+                      {
+                          "name": "howMany",
+                          "type": "HowManyType"
+                      }
+                  ],
+                  "samples": [
+                      "{howMany} la temporada {numSeason}",
+                      "{howMany} la temporada {numSeason}",
+                      "{howMany} la {numSeason} temporada",
+                      "Episodios en la temporada {numSeason}",
+                      "Episodios en la {numSeason} temporada",
+                      "La temporada {numSeason} {howMany}"
+                  ]
+              },
+              {
+                  "name": "GetNameEpisodesSeasonIntent",
+                  "slots": [
+                      {
+                          "name": "numSeason",
+                          "type": "AMAZON.NUMBER"
+                      },
+                      {
+                          "name": "numEpisode",
+                          "type": "AMAZON.NUMBER"
+                      },
+                      {
+                          "name": "whatNameIs",
+                          "type": "WhatNameIsType"
+                      },
+                      {
+                          "name": "tellMe",
+                          "type": "TellMeType"
+                      }
+                  ],
+                  "samples": [
+                      "{tellMe} {whatNameIs} {numEpisode} de la temporada {numSeason}",
+                      "{tellMe} {whatNameIs} {numEpisode} episodio  de la temporada {numSeason}",
+                      "{tellMe} {whatNameIs} {numEpisode} episodio  de la {numSeason} temporada",
+                      "{tellMe} {whatNameIs} {numEpisode} episodio  de la temporada {numSeason}",
+                      "{tellMe} {whatNameIs} {numEpisode} de la {numSeason} temporada",
+                      "{tellMe} {whatNameIs} {numEpisode} episodio",
+                      "{tellMe} {whatNameIs} {numEpisode}",
+                      "{tellMe} {whatNameIs} {numEpisode} de la {numSeason} temporada",
+                      "{tellMe} {whatNameIs} {numEpisode} de la temporada {numSeason}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "HowManyType",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Cuántos episodios"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dime cuántos episodios"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuántos tiene"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuántos episodios tiene"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dime cuántos tiene"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dime cuántos episodios tiene"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "WhatNameIsType",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Cómo se llama el episodio"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cómo se llama el"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cómo se llama"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuál es el"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuál es"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuál es el episodio"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuál es el nombre del episodio"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuál es el nombre"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "TellMeType",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Dime"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cuéntame"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}
