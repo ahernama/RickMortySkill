@@ -2,7 +2,7 @@
 
 <img src="https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Pocket_mortys_banner.jpg" />
 
-Skill implementada para Amazon Alexa utilizando la versión 2.0 de su SDK. Implementación para la distribución en su store en Español, se puede utilizar como template para implementar modelos de conversación, además de para generar request al exterior con las que construir las respuestas a los usuarios.
+Skill implementada para Amazon Alexa utilizando la versión 2.1 de su SDK. Implementación para la distribución en su store en Español, se puede utilizar como template para implementar modelos de conversación, además de para generar request al exterior con las que construir las respuestas a los usuarios.
 
 ## Sobre la Skill
 
