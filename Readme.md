@@ -33,3 +33,33 @@ Alexa, dime todos los personajes que estén vivos en el episodio 4 de la tempora
 * Node.js (> v4.3)
 * Registro en [AWS Account](https://aws.amazon.com/)
 * Registro en [Amazon Developer Account](https://developer.amazon.com/)
+
+### Additional Resources
+
+* La Skill utiliza la información obtenida del proyecto ["The Rick and Morty API"](https://rickandmortyapi.com/)
+* Las librerías utilizadas en el proyecto de back-end son [Request](https://github.com/request/request) para las llamadas al API de Rick and Morty y la propia [librería de Alexa para Node.js](https://www.npmjs.com/package/ask-sdk) 
+
+## License
+
+    MIT License
+
+    Copyright (c) 2018 Alex Hernández
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
