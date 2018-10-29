@@ -1,168 +1,423 @@
 {
-  "interactionModel": {
-      "languageModel": {
-          "invocationName": "rick y morty",
-          "intents": [
-              {
-                  "name": "AMAZON.CancelIntent",
-                  "samples": []
-              },
-              {
-                  "name": "AMAZON.HelpIntent",
-                  "samples": []
-              },
-              {
-                  "name": "AMAZON.StopIntent",
-                  "samples": []
-              },
-              {
-                  "name": "GetNumEpisodesSeasonIntent",
-                  "slots": [
-                      {
-                          "name": "numSeason",
-                          "type": "AMAZON.NUMBER"
-                      },
-                      {
-                          "name": "howMany",
-                          "type": "HowManyType"
-                      }
-                  ],
-                  "samples": [
-                      "{howMany} la temporada {numSeason}",
-                      "{howMany} la {numSeason} temporada",
-                      "Episodios en la temporada {numSeason}",
-                      "Episodios en la {numSeason} temporada",
-                      "La temporada {numSeason} {howMany}"
-                  ]
-              },
-              {
-                  "name": "GetNameEpisodesSeasonIntent",
-                  "slots": [
-                      {
-                          "name": "numSeason",
-                          "type": "AMAZON.NUMBER"
-                      },
-                      {
-                          "name": "numEpisode",
-                          "type": "AMAZON.NUMBER"
-                      },
-                      {
-                          "name": "whatNameIs",
-                          "type": "WhatNameIsType"
-                      },
-                      {
-                          "name": "tellMe",
-                          "type": "TellMeType"
-                      }
-                  ],
-                  "samples": [
-                      "{tellMe} {whatNameIs} {numEpisode} de la temporada {numSeason}",
-                      "{tellMe} {whatNameIs} {numEpisode} episodio  de la temporada {numSeason}",
-                      "{tellMe} {whatNameIs} {numEpisode} episodio  de la {numSeason} temporada",
-                      "{tellMe} {whatNameIs} {numEpisode} de la {numSeason} temporada",
-                      "{tellMe} {whatNameIs} {numEpisode} episodio",
-                      "{tellMe} {whatNameIs} {numEpisode}",
-                      "{tellMe} {whatNameIs} {numEpisode} de la temporada {numSeason}"
-                  ]
-              }
-          ],
-          "types": [
-              {
-                  "name": "HowManyType",
-                  "values": [
-                      {
-                          "name": {
-                              "value": "Cuántos episodios"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Dime cuántos episodios"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cuántos tiene"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cuántos episodios tiene"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Dime cuántos tiene"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Dime cuántos episodios tiene"
-                          }
-                      }
-                  ]
-              },
-              {
-                  "name": "WhatNameIsType",
-                  "values": [
-                      {
-                          "name": {
-                              "value": "Cómo se llama el episodio"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cómo se llama el"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cómo se llama"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cuál es el"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cuál es"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cuál es el episodio"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cuál es el nombre del episodio"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cuál es el nombre"
-                          }
-                      }
-                  ]
-              },
-              {
-                  "name": "TellMeType",
-                  "values": [
-                      {
-                          "name": {
-                              "value": "Dime"
-                          }
-                      },
-                      {
-                          "name": {
-                              "value": "Cuéntame"
-                          }
-                      }
-                  ]
-              }
-          ]
-      }
-  }
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rick y morty",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNumEpisodesSeasonIntent",
+                    "slots": [
+                        {
+                            "name": "numSeason",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "howMany",
+                            "type": "HowManyType"
+                        },
+                        {
+                            "name": "tellMe",
+                            "type": "TellMeType"
+                        }
+                    ],
+                    "samples": [
+                        "{tellMe} {howMany} la temporada {numSeason}",
+                        "{howMany} la temporada {numSeason}",
+                        "{howMany} la {numSeason} temporada",
+                        "Episodios en la temporada {numSeason}",
+                        "Episodios en la {numSeason} temporada",
+                        "La temporada {numSeason} {howMany}"
+                    ]
+                },
+                {
+                    "name": "GetNameEpisodesSeasonIntent",
+                    "slots": [
+                        {
+                            "name": "numSeason",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "numEpisode",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "whatNameIs",
+                            "type": "WhatNameIsType"
+                        },
+                        {
+                            "name": "tellMe",
+                            "type": "TellMeType"
+                        }
+                    ],
+                    "samples": [
+                        "{whatNameIs} {numEpisode} de la temporada {numSeason}",
+                        "{tellMe} {whatNameIs} {numEpisode} de la temporada {numSeason}",
+                        "{tellMe} {whatNameIs} {numEpisode} episodio  de la temporada {numSeason}",
+                        "{whatNameIs} {numEpisode} episodio  de la temporada {numSeason}",
+                        "{tellMe} {whatNameIs} {numEpisode} episodio  de la {numSeason} temporada",
+                        "{whatNameIs} {numEpisode} episodio  de la {numSeason} temporada",
+                        "{tellMe} {whatNameIs} {numEpisode} de la {numSeason} temporada",
+                        "{whatNameIs} {numEpisode} de la {numSeason} temporada",
+                        "{tellMe} {whatNameIs} {numEpisode} episodio",
+                        "{whatNameIs} {numEpisode} episodio",
+                        "{tellMe} {whatNameIs} el episodio {numEpisode}",
+                        "{whatNameIs} el episodio {numEpisode}",
+                        "{tellMe} {whatNameIs} el episodio {numEpisode} de la temporada {numSeason}",
+                        "{whatNameIs} el episodio {numEpisode} de la temporada {numSeason}",
+                        "{tellMe} {whatNameIs} {numEpisode}",
+                        "{whatNameIs} {numEpisode}",
+                        "{tellMe} {whatNameIs} {numEpisode} de la temporada {numSeason}",
+                        "{whatNameIs} {numEpisode} de la temporada {numSeason}"
+                    ]
+                },
+                {
+                    "name": "GetStatusCharactersIntent",
+                    "slots": [
+                        {
+                            "name": "numSeason",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "numEpisode",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "statusQuestion",
+                            "type": "StatusQuestionType"
+                        },
+                        {
+                            "name": "statusValue",
+                            "type": "StatusValueType"
+                        },
+                        {
+                            "name": "tellMe",
+                            "type": "TellMeType"
+                        }
+                    ],
+                    "samples": [
+                        "{tellMe} {statusQuestion} {statusValue} en el episodio {numEpisode} de la temporada {numSeason}",
+                        "{tellMe} {statusQuestion} {statusValue} en el {numEpisode} episodio de la temporada {numSeason}",
+                        "{tellMe} {statusQuestion} {statusValue} en el episodio {numEpisode} de la {numSeason} temporada",
+                        "{tellMe} {statusQuestion} {statusValue} en el {numEpisode} episodio de la {numSeason} temporada",
+                        "{tellMe} {statusQuestion} {statusValue}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "HowManyType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Cuántos episodios"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dime cuántos episodios"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuántos tiene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuántos episodios tiene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dime cuántos tiene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dime cuántos episodios tiene"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "StatusValueType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Vivos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Muertos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Desaparecidos"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "StatusQuestionType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Todos los personas que estén"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Todos los que estén"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Los personajes que estén"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "WhatNameIsType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Cómo se llama el episodio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cómo se llama el"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cómo se llama"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuál es el"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuál es"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuál es el episodio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuál es el nombre del episodio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "El nombre de"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuál es el nombre"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TellMeType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Dime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuéntame"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "GetNumEpisodesSeasonIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "numSeason",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RickMorty.IntentSlot-numSeason"
+                            }
+                        },
+                        {
+                            "name": "howMany",
+                            "type": "HowManyType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "tellMe",
+                            "type": "TellMeType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "GetNameEpisodesSeasonIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "numSeason",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RickMorty.IntentSlot-numSeason"
+                            }
+                        },
+                        {
+                            "name": "numEpisode",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RickMorty.IntentSlot-numEpisode"
+                            }
+                        },
+                        {
+                            "name": "tellMe",
+                            "type": "TellMeType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "whatNameIs",
+                            "type": "WhatNameIsType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "GetStatusCharactersIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "statusValue",
+                            "type": "StatusValueType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RickMorty.IntentSlot-statusValue"
+                            }
+                        },
+                        {
+                            "name": "numSeason",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RickMorty.IntentSlot-numSeason"
+                            }
+                        },
+                        {
+                            "name": "numEpisode",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-RickMorty.IntentSlot-numEpisode"
+                            }
+                        },
+                        {
+                            "name": "tellMe",
+                            "type": "TellMeType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "statusQuestion",
+                            "type": "StatusQuestionType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Intent-RickMorty.IntentSlot-statusValue",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Los personajes pueden tener 3 estados, vivos, muertos y desaparecidos, dinos cual quieres seleccionar"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Elige entre vivos, muertos o desaparecidos"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RickMorty.IntentSlot-numSeason",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "La serie tiene 3 temporadas, por favor, dinos para cuál quieres hacer el cálculo"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Para cuál temporada quieres hacer el cálculo?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-RickMorty.IntentSlot-numEpisode",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Debes decir un número de episodio correcto para realizar el cálculo"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿A qué número de episodio te refieres para hacer el cálculo?"
+                    }
+                ]
+            }
+        ]
+    }
 }
