@@ -4,11 +4,11 @@
 
 Skill implementada para Amazon Alexa utilizando la versión 2.0 de su SDK. Implementación para la distribución en su store en Español, se puede utilizar como template para implementar modelos de conversación, además de para generar request al exterior con las que construir las respuestas a los usuarios.
 
-## About
+## Sobre la Skill
 
 **Note:** Si estás pensando en desarrollar una nueva Skill en Español y quieres guiarte por este ejemplo, te recomiendo que eches un vistazo al [artículo en medium](https://planetachatbot.com/conversacion-alexa-espanol-6e90ae9401b) que publiqué para iniciarte en modelos de conversación y no tener problemas a la hora de pasar el proceso de certificación de Amazon.
 
-### Usage
+### Uso
 
 ```text
 Alexa, pregunta a Rick y Morty cuántos episodios tiene la primera temporada
@@ -34,12 +34,12 @@ Alexa, dime todos los personajes que estén vivos en el episodio 4 de la tempora
 * Registro en [AWS Account](https://aws.amazon.com/)
 * Registro en [Amazon Developer Account](https://developer.amazon.com/)
 
-### Additional Resources
+### Recursos adicionales
 
 * La Skill utiliza la información obtenida del proyecto ["The Rick and Morty API"](https://rickandmortyapi.com/)
 * Las librerías utilizadas en el proyecto de back-end son [Request](https://github.com/request/request) para las llamadas al API de Rick and Morty y la propia [librería de Alexa para Node.js](https://www.npmjs.com/package/ask-sdk) 
 
-## License
+## Licencia
 
     MIT License
 
