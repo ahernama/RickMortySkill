@@ -29,7 +29,6 @@
                   ],
                   "samples": [
                       "{howMany} la temporada {numSeason}",
-                      "{howMany} la temporada {numSeason}",
                       "{howMany} la {numSeason} temporada",
                       "Episodios en la temporada {numSeason}",
                       "Episodios en la {numSeason} temporada",
@@ -60,11 +59,9 @@
                       "{tellMe} {whatNameIs} {numEpisode} de la temporada {numSeason}",
                       "{tellMe} {whatNameIs} {numEpisode} episodio  de la temporada {numSeason}",
                       "{tellMe} {whatNameIs} {numEpisode} episodio  de la {numSeason} temporada",
-                      "{tellMe} {whatNameIs} {numEpisode} episodio  de la temporada {numSeason}",
                       "{tellMe} {whatNameIs} {numEpisode} de la {numSeason} temporada",
                       "{tellMe} {whatNameIs} {numEpisode} episodio",
                       "{tellMe} {whatNameIs} {numEpisode}",
-                      "{tellMe} {whatNameIs} {numEpisode} de la {numSeason} temporada",
                       "{tellMe} {whatNameIs} {numEpisode} de la temporada {numSeason}"
                   ]
               }
